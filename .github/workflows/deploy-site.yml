@@ -45,6 +45,8 @@ jobs:
 
       - name: Run lume build
         run: deno task build
+        env:
+          BUILD_MODE: prod
 
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
