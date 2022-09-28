@@ -7,7 +7,7 @@ const createConfig = (mode: BuildMode) => {
   if (mode === "prod") {
     return {
       mode,
-      location: new URL("https://jrson.me"),
+      location: new URL("https://praswicksono.pw"),
     };
   }
   return {
