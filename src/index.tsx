@@ -11,19 +11,14 @@ export default ({ comp, search }: PageData) => {
   return (
     <>
       <section>
-        <h1>Hi 👋, I'm jrson!</h1>
         <p>
-          I am a passionate web developer who likes to experiment with different
-          stacks. I am forced to optimize things to infinity.
-        </p>
-        <p>
-          I blog about my experience I like to share, using{" "}
+          This blog built by{" "}
           <a
-            href="https://nodejs.org/"
+            href="https://lume.land/"
             target="_blank"
             rel="nofollow noopener noreferrer"
           >
-            Node.js
+            Lume
           </a>{" "}
           &{" "}
           <a

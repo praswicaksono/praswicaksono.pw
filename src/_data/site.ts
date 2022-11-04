@@ -1,18 +1,18 @@
 export default {
-  title: "jrson.me",
+  title: "praswicaksono.pw",
   description:
-    "I am a passionate web developer who likes to experiment with different stacks. I am forced to optimize things to infinity. I blog about my experience I like to share, using Node.js and Deno.",
-  url: "https://jrson.me",
-  shortUrl: "jrson.me",
+    "I am ordinary software engineer specialized in backend",
+  url: "https://praswicaksono.pw",
+  shortUrl: "praswicaksono.pw",
   lang: "en",
   author: {
-    name: "jrson",
-    url: "https://jrson.me",
+    name: "pras",
+    url: "https://praswicaksono.pw",
   },
   github: {
-    user: "jrson83",
-    url: "https://github.com/jrson83",
+    user: "praswicaksono",
+    url: "https://github.com/praswicaksono",
   },
-  twitter: "@jrson83",
-  ogImage: "/images/site/og-placeholder-1200x630.png",
+  twitter: "@praswicaksono",
+  ogImage: "https://og-image.vercel.app/PW.png?theme=dark&md=1&fontSize=150px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-bw-logo.svg&widths=1200&heights=630",
 } as const;

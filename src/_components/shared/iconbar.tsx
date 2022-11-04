@@ -8,19 +8,6 @@ export default (
     <li>
       <a
         className="no-ext"
-        href="javascript:location='mailto:\u0074\u0065\u0073\u0074\u0040\u0062\u006c\u0061\u002e\u0064\u0065';void 0"
-        aria-label="Contact me by email"
-      >
-        <comp.shared.icon
-          icon={unicons.envelope}
-          title="Contact me by email"
-          color="primary-link-color"
-        />
-      </a>
-    </li>
-    <li>
-      <a
-        className="no-ext"
         href={site.github.url}
         target="_blank"
         rel="noopener"

@@ -82,15 +82,4 @@ export interface AboutData extends PageData {
       }>;
     }>;
   };
-  blogstacks: {
-    title: string;
-    lists: Array<{
-      description: string;
-      items: Array<{
-        title: string;
-        description: string;
-        url: string;
-      }>;
-    }>;
-  };
 }
