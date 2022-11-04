@@ -13,7 +13,9 @@ series:
 
 ## Named Argument
 
-Named argument adalah fitur baru di PHP 8, yang mana developer dapat `passing` `argument` pada sebuah `function` berdasar nama `parameter` dan tidak harus berurutan. Berikut contoh penggunaan `named argument`
+Named argument adalah fitur baru di PHP 8, yang mana developer dapat `passing`
+`argument` pada sebuah `function` berdasar nama `parameter` dan tidak harus
+berurutan. Berikut contoh penggunaan `named argument`
 
 ### Contoh
 
@@ -29,7 +31,8 @@ simpan(alamat: 'Malang', nama: 'Pras');
 
 ## Argument Unpacking
 
-`Argument Unpacking` sudah ada sejak PHP 5.6, dengan menggunakan `spread` operator (`...`) kita bisa mengunpack `array argument` pada sebuah `function`
+`Argument Unpacking` sudah ada sejak PHP 5.6, dengan menggunakan `spread`
+operator (`...`) kita bisa mengunpack `array argument` pada sebuah `function`
 
 ### Contoh
 
@@ -45,11 +48,13 @@ function simpan(string $nama, string $alamat): void {
 simpan(...['Pras', 'Malang']);
 ```
 
-Namun yang harus diingat bahwa `array` yang unpack harus sesuai urutan `parameter` pada `function`
+Namun yang harus diingat bahwa `array` yang unpack harus sesuai urutan
+`parameter` pada `function`
 
 ## Real World Usage
 
-Kedua function tersebut dapat digunakan untuk proses mapping `JSON` object yang merupakan response dari `API` pihak ketiga ke PHP `class` yang telah kita buat
+Kedua function tersebut dapat digunakan untuk proses mapping `JSON` object yang
+merupakan response dari `API` pihak ketiga ke PHP `class` yang telah kita buat
 
 ### Contoh
 
@@ -85,8 +90,12 @@ $user = new User(...json_decode($json, true));
 echo $user->access_token;
 ```
 
-Jika kita `passing` associative array dan menggunakan spread operator untuk mengunpack argument maka secara otomatis PHP akan menggunakan array key sebagai nama `parameter` dan array value sebagai `argument` valuenya
+Jika kita `passing` associative array dan menggunakan spread operator untuk
+mengunpack argument maka secara otomatis PHP akan menggunakan array key sebagai
+nama `parameter` dan array value sebagai `argument` valuenya
 
 ## Penutup
 
-Dengan menggunakan teknik ini, kita bisa mendapatkan fully typed object dari response API pihak ketiga sehingga kita bisa menggunakan fitur autocomple pada IDE serta menguarangi potensi error typo
+Dengan menggunakan teknik ini, kita bisa mendapatkan fully typed object dari
+response API pihak ketiga sehingga kita bisa menggunakan fitur autocomple pada
+IDE serta menguarangi potensi error typo
