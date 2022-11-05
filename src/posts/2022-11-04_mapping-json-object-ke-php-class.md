@@ -13,7 +13,7 @@ series:
 
 ## Named Argument
 
-Named argument adalah fitur baru di PHP 8, yang mana developer dapat `passing`
+Named argument adalah fitur baru di PHP 8, yang mana developer dapat mengirimkan
 `argument` pada sebuah `function` berdasar nama `parameter` dan tidak harus
 berurutan. Berikut contoh penggunaan `named argument`
 
@@ -90,12 +90,12 @@ $user = new User(...json_decode($json, true));
 echo $user->access_token;
 ```
 
-Jika kita `passing` associative array dan menggunakan spread operator untuk
-mengunpack argument maka secara otomatis PHP akan menggunakan array key sebagai
-nama `parameter` dan array value sebagai `argument` valuenya
+Jika kita mengirimkan `associative array` dan menggunakan `spread operator`
+untuk mengunpack `argument` maka secara otomatis PHP akan menggunakan array key
+sebagai nama `parameter` dan `array value` sebagai `argument` valuenya
 
 ## Penutup
 
 Dengan menggunakan teknik ini, kita bisa mendapatkan fully typed object dari
-response API pihak ketiga sehingga kita bisa menggunakan fitur autocomple pada
+response API pihak ketiga sehingga kita bisa menggunakan fitur autocomplete pada
 IDE serta menguarangi potensi error typo
