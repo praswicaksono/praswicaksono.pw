@@ -1,6 +1,6 @@
 ---
 title: "Mapping JSON Object ke PHP Class"
-excerpt: Tutotial mapping json object ke php class dengan cara yang elegan menggunakan named argument dan argument unpacking
+excerpt: Tutorial mapping json object ke php class dengan cara yang elegan menggunakan named argument dan argument unpacking
 date: 2022-11-04 12:00:00
 updated: 2022-11-04 12:00:00
 draft: false
