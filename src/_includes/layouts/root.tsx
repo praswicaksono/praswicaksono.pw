@@ -9,7 +9,7 @@ export default (
       itemScope
       itemType="http://schema.org/WebPage"
       lang={site.lang}
-      data-theme="light"
+      data-theme="dark"
     >
       {/* deno-fmt-ignore */}
       {/* deno-lint-ignore ban-ts-comment */}
