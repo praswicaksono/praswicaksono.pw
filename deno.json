@@ -29,7 +29,8 @@
   "fmt": {
     "files": {
       "exclude": [
-        "./_site"
+        "./_site",
+        "./src/posts"
       ]
     }
   }

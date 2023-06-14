@@ -21,7 +21,7 @@ storedTheme && storeTheme(storedTheme);
 
 document.getElementById("theme-toggle").addEventListener("click", () => {
   const currentTheme =
-    (getComputedStyle(root).getPropertyValue("color-scheme") == "light");
+    getComputedStyle(root).getPropertyValue("color-scheme") == "light";
   storeTheme(!!currentTheme);
 });
 

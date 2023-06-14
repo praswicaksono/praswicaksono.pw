@@ -161,8 +161,8 @@ Secara default graphp interactive console di `/api/graphql`
 
 Ada beberapa library modern yang cukup menarik untuk mengembangkan applikasi modern
 
-[*] Library Real Time: Mercure
-[*] HTTP 2 Server Push: Vulcain
-[*] Admin Panel: Filament PHP
-[*] Frontend Framework Integration: Symfony UX, Laravel Livewire, InertiaJS
+* Library Real Time: Mercure
+* HTTP 2 Server Push: Vulcain
+* Admin Panel: Filament PHP
+* Frontend Framework Integration: Symfony UX, Laravel Livewire, InertiaJS
 
