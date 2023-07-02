@@ -1,5 +1,5 @@
-@use "../variables" as *;
-@use "../mixins" as *;
+@use "../variables/index" as *;
+@use "../mixins/index" as *;
 
 // Layout: Footer
 footer {
@@ -14,7 +14,7 @@ footer {
     margin-top: 0;
     margin-bottom: 0;
   }
-  
+
   p {
     margin-top: 0;
     margin-bottom: 0;

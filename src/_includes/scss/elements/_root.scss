@@ -1,4 +1,4 @@
-@use "../mixins" as *;
+@use "../mixins/index" as *;
 
 // Element: Root
 @include mix-root;

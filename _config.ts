@@ -7,12 +7,12 @@ import jsx from "lume/plugins/jsx_preact.ts";
 import sass from "lume/plugins/sass.ts";
 import terser from "lume/plugins/terser.ts";
 import inline from "lume/plugins/inline.ts";
+import feed from "lume/plugins/feed.ts";
+import sitemap from "lume/plugins/sitemap.ts";
 
 import unified from "#plugins/unified/mod.ts";
 import remarkPlugins from "#plugins/unified/remark/mod.ts";
 import rehypePlugins from "#plugins/unified/rehype/mod.ts";
-import atomFeed from "#plugins/atom-feed/mod.ts";
-import sitemap from "#plugins/sitemap/mod.ts";
 import md5CacheBuster from "#plugins/md5-cache-buster/mod.ts";
 
 const site = lume({
@@ -47,9 +47,30 @@ site
   .loadAssets([".js"])
   .use(terser())
   .use(inline())
-  .use(atomFeed())
   .use(sitemap({
-    excludes: ["/404/", "/blog/tag/"],
+    filename: "sitemap.xml",
+    query: "type=post",
+    sort: "date=desc",
+  }))
+  .use(feed({
+    output: ["/site.rss", "/site.json"],
+    query: "type=post",
+    sort: "date=desc",
+    limit: 10,
+    info: {
+      title: "My blog",
+      description: "Where I put my thoughts",
+      date: new Date(),
+      lang: "en",
+      generator: true,
+    },
+    items: {
+      title: "=title",
+      description: "=excerpt",
+      date: "=date",
+      content: "=children",
+      lang: "=lang",
+    },
   }));
 
 if (config.mode === "prod") {

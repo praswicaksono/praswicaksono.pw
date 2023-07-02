@@ -1,6 +1,6 @@
 @use "sass:map";
-@use "../mixins" as *;
-@use "../variables" as *;
+@use "../mixins/index" as *;
+@use "../variables/index" as *;
 
 // Element: Typography
 h1,
